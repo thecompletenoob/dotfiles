@@ -67,6 +67,9 @@ bindsym $mod+Shift+x exec brave
 # Connect to external monitor
 bindsym $mod+p exec arandr
 
+# Monitor screen only
+bindsym $mod+Shift+p exec /home/kofi/.scripts/monitoronly.sh
+
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+F5 exec terminal -e 'mocp'
