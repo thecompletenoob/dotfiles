@@ -14,7 +14,7 @@ disabled = false
 # Display hostname
 [hostname]
 ssh_only = false
-format =  "on [$hostname](bold red) "
+format =  "on [$hostname](green) "
 trim_at = ".companyname.com"
 disabled = false
 
