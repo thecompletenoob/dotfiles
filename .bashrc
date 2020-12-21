@@ -92,12 +92,11 @@ unset use_color safe_term match_lhs sh
 
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
+alias free='free -h'                      # show sizes in human readable
 alias np='nano -w PKGBUILD'
 alias more=less
-alias anydeskplease='env GTK2_RC_FILES= GTK_DATA_PREFIX= GTK_THEME=Adwaita /usr/bin/anydesk'
-alias arandrhome='arandr /home/kofi/Documents/homemonitorprimary.sh'
 alias ll="ls -al"
+alias monitoronly="/home/kofi/Documents/monitoronly.sh"
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -140,4 +139,9 @@ ex ()
   fi
 }
 
+# Export for terminal support in some ssh sessions
+export TERM='xterm-256color'
+
+# Starship prompt
 eval "$(starship init bash)"
+
